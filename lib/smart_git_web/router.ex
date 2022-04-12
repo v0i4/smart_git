@@ -16,6 +16,8 @@ defmodule SmartGitWeb.Router do
 
   scope "/", SmartGitWeb do
     pipe_through :browser
+
+    live "/", PageLive, :index
   end
 
   # Other scopes may use custom stacks.
