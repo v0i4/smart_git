@@ -1,4 +1,3 @@
-#dialyzer.yml
 name: Verify Dialyzer
 on: pull_request
 jobs:

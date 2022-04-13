@@ -1,4 +1,3 @@
-#security.yml
 name: Verify Security
 on: pull_request
 jobs:

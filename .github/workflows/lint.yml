@@ -1,4 +1,3 @@
-#lint.yml
 name: Verify LINT
 on: pull_request
 jobs:
