@@ -5,11 +5,7 @@ defmodule SmartGit.GithubApi.GetRepos do
     {Tesla.Middleware.BaseUrl, "https://api.github.com"},
     Tesla.Middleware.JSON
   ]
-  def get_repos do
-    language = "Elixir"
-    page = 1
-    per_page = 5
-
+  def get_repos(language, page, per_page) do
     @middleware
     |> Tesla.client()
     |> get("/search/repositories",
