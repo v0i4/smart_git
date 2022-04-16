@@ -27,6 +27,7 @@ defmodule SmartGitWeb.Shared.RepoDetail do
       {:noreply, assign(socket, message: message, icon: "go.html")}
     else
       socket = push_redirect(socket, to: Routes.show_repo_path(socket, :index, repo.git_id))
+      {:noreply, socket}
     end
   end
 
