@@ -9,7 +9,7 @@ defmodule SmartGit.GitRepos do
     |> Repo.insert()
   end
 
-  def all(), do: GitRepo |> Repo.all()
+  def all, do: GitRepo |> Repo.all()
 
   def get_saved_repos do
     GitRepo

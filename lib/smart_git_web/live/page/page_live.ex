@@ -1,8 +1,9 @@
 defmodule SmartGitWeb.PageLive do
   use SmartGitWeb, :live_view
-  alias SmartGitWeb.Shared.RepoDetail
+
   alias SmartGit.GithubApi
   alias SmartGit.GitRepos
+  alias SmartGitWeb.Shared.RepoDetail
 
   def mount(_params, _session, socket) do
     {:ok, socket}
